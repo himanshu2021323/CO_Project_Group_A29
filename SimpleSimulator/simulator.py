@@ -423,14 +423,14 @@ while i <= (len(main_List)-1):
         i += 1
 
 
-    # printing part
+  
     PRINT = "".join(registers["111"]).zfill(16)
     EE = programCounter+" " + registers["000"] + " " + registers["001"] + " " + registers["010"] + " " + registers["011"] + " " + registers["100"] + " " + registers["101"] + " " + registers["110"] + " " + PRINT
     memory_List.append(EE)
     if(halt_Flag):
         break
 
-# memoryDump
+
 dmpCount = 0
 for i in main_List:
     memory_List.append(i)
